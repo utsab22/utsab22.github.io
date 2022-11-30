@@ -1,0 +1,126 @@
+html,body{
+  width: 100%;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
+  padding:0;
+  background-image: url("../images/background.png");
+}
+
+.headerTop{
+  background-image: url("../images/bannerbg.png");
+}
+
+.headerTop img{
+  position: relative;
+  width: 50%;
+  left: 25%;
+  margin: 0 ;
+}
+
+.title p{
+  font: 14px;
+  font-weight: bold;
+  text-shadow: 2px 0px 0px rgba(120, 120, 126, 1);
+  margin-left: 47%;
+}
+
+.contentContainer{
+  width: 50%;
+  margin-left: 25%;
+  border:4px solid #8b8b8c;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.contentContainer .review-container{
+  position:relative;
+  width: 67%;
+
+  float:left;
+}
+
+.contentContainer .review-container .review-section-1 {
+  /* position:relative; */
+  width:50%;
+  float:left;
+}
+
+.contentContainer .review-container .review-section-2 {
+  /* position: relative; */
+  width:50%;
+  float:right;
+}
+
+.review-para-box{
+  border:2px solid #8b8b8c;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 8pt;
+  padding: 8px;
+  font-weight: bold;
+  background-color: #E8DC9B;
+  min-height: 25px;
+}
+
+.review-para-box img{
+  float:left;
+  margin-right: 5px;
+}
+
+ .reviewer img{
+   float:left;
+   margin-right: 5px;
+ }
+  .reviewer {
+    font-style: italic;
+    font-size: 8pt;
+    margin-bottom: 20pt;
+  }
+
+.rottenHeader{
+  background-image: url("../images/rbg.png");
+}
+
+.rottenHeader .headerRating{
+  position: absolute;
+  font-size: 48px;
+  color: #ff0015;
+  top : 1%;
+}
+
+.contentContainer .overview-container{
+  width: 33%;
+  background-color:#a2b964;
+  float:right;
+}
+
+.overview-container dl{
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.overview-container dl dt{
+  margin-top:10px;
+  font-size: 11px;
+}
+
+.overview-container dl dd{
+  font-size: 10px;
+}
+
+.contentContainer .pagination p{
+  margin:0;
+  text-align: center;
+  font-size: 8pt;
+  background-color: #a2b964;
+  clear:both;
+}
+
+.w3Validators{
+  position: fixed;
+  right:0;
+  bottom:0;
+  opacity:60%;
+}
