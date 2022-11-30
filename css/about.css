@@ -1,0 +1,25 @@
+body{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #545246;
+    color: white;
+}
+
+h1, h3, h5{
+    color: #8daed6;
+}
+
+b{
+    color: #f0e87f;
+}
+
+
+
+a{
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
