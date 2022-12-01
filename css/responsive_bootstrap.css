@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+#header {
+  font-size: 150%;
+  text-align: center;
+  padding: 1%;
+  background-color: #00E2FA;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #005760;
+}
+
+.navbar ul li {
+    box-shadow: 1px 0 #0b1413;
+    color: #8b8b8c;
+    padding: 10px;
+}
+
+#column{
+    height: 300px;
+}
+
+#column1 {
+    background-color: #AAAAAA;
+}
+
+#column2 {
+    background-color: #BBBBBB;
+}
+
+#column3 {
+    background-color: #CCCCCC;
+}
+
+#footer {
+    font-size: 150%;
+    color: white;
+    background-color: #2E4F4F;
+    text-align: center;
+    padding: 1%;
+}
