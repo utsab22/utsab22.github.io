@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inheritance</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // initialize mocha for behavioural driven
+      mocha.setup("bdd");
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+    </script>
+    <script src="scripts/inheritanceCode.js"></script>
+    <script src="scripts/inheritanceTest.js"></script>
+  </head>
+
+  <body>
+    <div id="mocha">
+      <p> Please see the result of the running test for inheritance problems. </p>
+      <ol>
+        <li>Filter Function with Banned words</li>
+        <li>Bubble Sort Algorithm Function in Array</li>
+        <li>inheritance of Person in Teacher object</li>
+      </ol>
+    </div>
+
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
