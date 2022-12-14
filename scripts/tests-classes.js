@@ -105,8 +105,6 @@ describe("d)  Bank Class Test",function(){
     let account = new Account(12343);
     let account2 = new Account(12344);
     let savingsAccount1 = new SavingsAccount(12345, 0.10);
-    let savingsAccount2 = new SavingsAccount(12346, 0.10);
-    let checkingsAccount = new CheckingAccount(12347, 200);
     let accounts = [account,savingsAccount1];
     let bank = new Bank(...accounts);
 
@@ -114,12 +112,13 @@ describe("d)  Bank Class Test",function(){
     bank.addAccount(account2);
     let bankAccountAdded = bank.getAccounts().filter(el=> el.getNumber() == account2.getNumber());
 
-    bank.addSavingsAccount(savingsAccount2);
-    let savingsAccountAdded = bank.getAccounts().filter(el=> el.getNumber() == savingsAccount2.getNumber());
+    //addSavingsAccount
+    bank.addSavingsAccount(12346, 0.10);
+    let savingsAccountAdded = bank.getAccounts().filter(el=> el.getNumber() == 12346);
 
     // addCheckingAccount
-    bank.addCheckingAccount(checkingsAccount);
-    let checkingsAccountAdded = bank.getAccounts().filter(el=> el.getNumber() == checkingsAccount.getNumber());
+    bank.addCheckingAccount(12347, 200);
+    let checkingsAccountAdded = bank.getAccounts().filter(el=> el.getNumber() == 12347);
 
     // closeAccount
     bank.closeAccount(12345);
@@ -127,10 +126,9 @@ describe("d)  Bank Class Test",function(){
 
     // accountReport
     let reportString = bank.accountReport();
-    // let reportString = bank.getAccounts().reduce((acc,el)=> acc+el.toString()+",   ","");
-    // console.log(reportString);
+    console.log(reportString);
 
-    let eodString = bank.endOfMonth();
+    // let eodString = bank.endOfMonth();
     // console.log(eodString);
 
     if (!bankAccountAdded)
@@ -141,7 +139,7 @@ describe("d)  Bank Class Test",function(){
       {
         assert.fail(0, 1, 'savingsAccountAdded method is not working');
       }
-      else if (!checkingsAccount)
+      else if (!checkingsAccountAdded)
       {
         assert.fail(0, 1, 'checkingsAccount method is not working');
       }

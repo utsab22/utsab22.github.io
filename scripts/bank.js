@@ -12,16 +12,16 @@ class Bank {
   }
 
   addAccount(account){
-    this._accounts = [...this._accounts,account];
+    this._accounts = [...this._accounts, account];
   }
 
-  addSavingsAccount(interest){
-    let savingsAccount = new SavingsAccount(interest);
+  addSavingsAccount(number, interest){
+    let savingsAccount = new SavingsAccount(number,interest);
     this._accounts = [...this._accounts, savingsAccount];
   }
 
-  addCheckingAccount(overDraftLimit){
-    let checkingAccount = new CheckingAccount(overDraftLimit);
+  addCheckingAccount(number, overDraftLimit){
+    let checkingAccount = new CheckingAccount(number, overDraftLimit);
     this._accounts = [...this._accounts, checkingAccount];
   }
 
