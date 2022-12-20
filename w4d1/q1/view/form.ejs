@@ -1,0 +1,35 @@
+<h1>This is heading</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet/master.css">
+    <title></title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <input type="text" name="key" placeholder="Enter key here">
+      <input type="text" name="val"  placeholder="Enter value here">
+      <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <table>
+      <th> Key </th>
+      <th>Value</th>
+      <% if(cookies){
+                for (key in cookies) { %>
+                    <tr>
+                    <td><%=key%></td>
+                    <td><%=cookies[key]%></td>
+                    </tr>
+                <% }
+                }
+                else{ %>
+                    <tr>
+                        <td> No cookie found</td>
+                    </tr>
+                <%}
+                %>
+    </table>
+  </body>
+</html>
